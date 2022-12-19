@@ -1,2 +1,0 @@
-<?php
- // Configurações do projeto.
