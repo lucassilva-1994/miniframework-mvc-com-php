@@ -6,7 +6,7 @@
         }
 
         public function insert(){
-            $this->db->insert("posts", array(
+            $this->db->insert(array(
                 "titulo" => "Porquê ser um Programador?",
                 "resumo" => "Programador está sendo um dos profissionais mais ...",
                 "conteudo" => "O Programador está sendo uma dos profissionais mais procurados no mercado,
@@ -17,19 +17,19 @@
         }
 
         public function read(){
-            print_r($this->db->read("posts"));
+            print_r($this->db->read());
             print "Dados listados com sucesso.";
         }
 
         public function update(){
-            $this->db->update("posts", array(
+            $this->db->update(array(
                 "comentarios" => 53
             ), "id=53");
             print "Dados atualizados com sucesso.";
         }
 
         public function delete(){
-            $this->db->delete("posts","id=52");
+            $this->db->delete("id=52");
             print "Dados removidos com sucesso.";
         }
   }

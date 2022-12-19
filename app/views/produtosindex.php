@@ -1,2 +1,3 @@
-<?php
-  print "Essa é a minha página index de produtos.";
+<strong>Nome:</strong> <?= $view_nome;?> <br/>
+<strong>Sobrenome:</strong> <?= $view_sobrenome;?> <br/>
+<strong>Cidade:</strong> <?= $view_cidade;?> 
